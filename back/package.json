@@ -1,0 +1,30 @@
+{
+	"name": "teste_full_stack_shopper",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:M4Y50N/teste_full_stack_shopper.git",
+	"author": "peth <pethersonreis@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "ts-node-dev --ignore-watch node_modules --rs --cls src/server.ts"
+	},
+	"dependencies": {
+		"axios": "^1.7.8",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.21.1",
+		"express-async-errors": "^3.1.1",
+		"pg": "^8.13.1",
+		"sequelize": "^6.37.5",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.0",
+		"@types/sequelize": "^4.28.20",
+		"sequelize-cli": "^6.6.2",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.7.2"
+	}
+}
