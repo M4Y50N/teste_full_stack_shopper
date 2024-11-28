@@ -1,6 +1,7 @@
 import { DataTypes, Model } from "sequelize";
 
 import sequelize from "../db/connect";
+import Review from "./Review";
 
 class Driver extends Model<any, any> {
 	declare id: number;

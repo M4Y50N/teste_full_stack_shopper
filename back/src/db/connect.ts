@@ -1,15 +1,9 @@
 import "dotenv/config";
 
-const dbHost = process.env.PGHOST!;
-const dbName = process.env.PGDATABASE!;
-const dbUser = process.env.PGUSER!;
-const dbPassword = process.env.PGPASSWORD!;
-
 import { Sequelize } from "sequelize";
-import Driver from "../models/Driver";
 
-const sequelize = new Sequelize(dbName, dbUser, dbPassword, {
-	host: dbHost,
+const sequelize = new Sequelize("db_test_full_stack", "peth", "3023", {
+	host: "localhost",
 	dialect: "postgres",
 });
 

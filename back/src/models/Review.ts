@@ -28,6 +28,7 @@ Review.init(
 	}
 );
 
+Driver.hasOne(Review, { as: "review", foreignKey: "driver_id" });
 Review.belongsTo(Driver, { foreignKey: "driver_id" });
 
 export default Review;
